@@ -1,6 +1,15 @@
-# GingerFlow (Beta)
+# GingerFlow
 
 GingerFlow is a desktop visual automation platform for building, running, and monitoring workflows without writing orchestration code.
+
+## GingerFlow Beta Status
+
+- Current state: active development
+- Release phase: Beta only
+- Intended auth direction: support for major providers
+- Current usage intent: testing and evaluation only
+
+> Safety notice: The current GingerFlow Beta build is intended for testing purpose only. Incorrect workflow configuration or unsafe automation actions may affect files, services, or system state. Use in controlled environments and at your own risk.
 
 ## Motive
 
@@ -39,8 +48,8 @@ GingerFlow exists to make automation faster to build, easier to understand, and 
 
 ## Authentication
 
-GingerFlow will support sign-in with major providers.
-For local evaluation, the sign-in screen also includes a Test App option that enables a temporary session for the current Beta run only.
+GingerFlow is being built to support sign-in with major providers.
+For local evaluation, the sign-in screen also includes a Test App option that enables a temporary session for the current run only.
 
 ## Binary Releases
 
@@ -59,3 +68,7 @@ Workflows are saved as fg files and can be shared, versioned, and reused across 
 ## Vision
 
 GingerFlow aims to become a practical automation workspace where teams can design, execute, and evolve real production workflows with clarity and control.
+
+## Licensing
+
+Licensing is currently under progress and will be finalized in an upcoming update.
