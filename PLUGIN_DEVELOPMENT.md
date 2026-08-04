@@ -1,4 +1,4 @@
-# gingerflow Plugin Development Guide
+# Gingerflow Plugin Development Guide
 
 ## Table of Contents
 
