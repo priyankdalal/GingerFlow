@@ -46,6 +46,44 @@ GingerFlow exists to make automation faster to build, easier to understand, and 
 - Reusable building blocks reduce duplicate implementation effort.
 - Runtime visibility improves troubleshooting and confidence.
 
+## Why GingerFlow Is a Desktop App (Not a Web App)
+
+GingerFlow is intentionally desktop-first because automation often touches sensitive systems, local files, credentials, and production operations. For this use case, security comes first, then execution speed and scale.
+
+### Security Before Execution
+
+- Automation can change real systems quickly, so preventing unsafe access is more important than maximizing remote convenience.
+- A desktop boundary reduces unnecessary exposure to internet-facing attack surfaces.
+- Local execution makes permission scope clearer and easier to audit on a single machine.
+
+### Why We Do Not Store Data Online by Default
+
+- Workflow definitions may contain business logic, endpoint details, transformation rules, and operational intent.
+- Runtime data may include internal records, file paths, metadata, and service responses.
+- Keeping data local-by-default reduces data residency risk, third-party retention risk, and accidental cloud leakage.
+- Teams can still version workflow files in their own controlled repositories without requiring a shared vendor cloud.
+
+### Web App Security Concerns for Automation Platforms
+
+- Browser sessions are exposed to risks such as token theft, session hijacking, and cross-site scripting vectors.
+- Multi-tenant cloud storage increases blast radius if account or infrastructure boundaries are misconfigured.
+- Credential handling in always-online architectures can create persistent high-value targets.
+- Public endpoint dependence increases risk from supply-chain compromises and service outages outside user control.
+
+### Web Limitations for Heavy Automation
+
+- Browser sandboxes restrict direct system access to local files, background processes, and OS-level resources.
+- Long-running, high-throughput automation can be constrained by browser process limits and tab lifecycle behavior.
+- Network interruptions and browser refresh cycles can disrupt in-progress orchestration.
+- Advanced plugin/runtime integration is harder when execution is constrained to browser capability and policy.
+
+### Desktop Robustness for Real Operations
+
+- Stable local runtime with stronger control over processes, memory, and resource management.
+- Better support for long-running workflows, local dependencies, and system-level integrations.
+- Predictable execution even in restricted or partially offline environments.
+- Easier enterprise hardening with host controls, endpoint security tooling, and local policy enforcement.
+
 ## Authentication
 
 GingerFlow is being built to support sign-in with major providers.
