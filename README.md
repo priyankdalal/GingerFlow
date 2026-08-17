@@ -20,6 +20,46 @@ From a simple two-node automation to a multi-stage data pipeline, GingerFlow giv
 - **Themeable:** ship and switch between named themes with palette tokens, typography, icons, and derived theme inheritance.
 - **Built for possibilities:** combine the existing node library, custom subflows, streaming batches, Python libraries, external tools, databases, APIs, files, and event-driven listeners into workflows tailored to your domain.
 
+## Screenshots
+
+The screenshots below are organized by topic and can be replaced with captured application images as the UI documentation evolves.
+
+### Visual Workflow Authoring
+
+<p><em>Canvas, Toolbox, node configuration, connections, minimap, and viewport controls.</em></p>
+
+![GingerFlow Main Window](assets/images/main_window.png)
+
+### Workflow Execution and Observability
+
+<p><em>Running workflow with node status, execution timeline, output previews, logs, and process statistics.</em></p>
+
+![GingerFlow Workflow](assets/images/workflow.png)
+
+### Custom Node Clubbing
+
+<p><em>Selected connected nodes and the Club Selected Nodes dialog.</em></p>
+
+![GingerFlow Grouping Nodes](assets/images/clubbing.gif)
+
+### Streaming Data Pipelines
+
+<p><em>Bounded CSV pipeline from stream input through filtering and transformation to file output.</em></p>
+
+![GingerFlow Streamed Pipelines](assets/images/streamed_pipelines.png)
+
+### Python Plugin Platform
+
+<p><em>Plugin Manager with an installed plugin and its nodes visible in the Toolbox.</em></p>
+
+![GingerFlow Plugin Window](assets/images/plugin_window.png)
+
+### Themes and UI Customization
+
+<p><em>Theme selection and the editor rendered with a named theme.</em></p>
+
+![GingerFlow Theme Window](assets/images/theme_window.png)
+
 ## Feature Highlights
 
 ### Visual Workflow Authoring
